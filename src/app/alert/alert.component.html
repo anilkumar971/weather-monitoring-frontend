@@ -1,0 +1,18 @@
+<div>
+    <h2>Weather Alert</h2>
+  
+    <label for="citySelect">Select a city:</label>
+    <select id="citySelect" (change)="onCityChange($event)">
+      <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+    </select>
+  
+    <div *ngIf="alert">
+      <p class="alert">Alert: High temperature detected for {{ selectedCity }}!</p>
+    </div>
+  
+    <div *ngIf="!alert && selectedCity">
+      <p>No alerts for {{ selectedCity }}. The temperature is within safe limits.</p>
+    </div>
+  </div>
+  
+  

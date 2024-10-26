@@ -1,0 +1,21 @@
+<div>
+    <h2>Weather Summary</h2>
+  
+    <label for="citySelect">Select a city:</label>
+    <select id="citySelect" [(ngModel)]="city" (change)="onCityChange(city)">
+      <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+    </select>
+  
+    <div *ngIf="summary">
+      <h3>Weather in {{ city }}</h3>
+      <p>Temperature: {{ summary.main.temp }}°C</p>
+      <p>Condition: {{ summary.weather[0].description }}</p>
+      <p>Humidity: {{ summary.main.humidity }}%</p>
+      <p>Wind Speed: {{ summary.wind.speed }} m/s</p>
+    </div>
+  
+    <div *ngIf="!summary && city">
+      <p>No weather data available for {{ city }}.</p>
+    </div>
+  </div>
+  

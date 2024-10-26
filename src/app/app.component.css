@@ -1,0 +1,56 @@
+/* General reset for nav styles */
+nav {
+    background-color: #007bff; /* Primary background color */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Unordered list style reset */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* List item style */
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  /* Link styles */
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    background-color: #0056b3; /* Slightly darker shade */
+    color: #f0f0f0;
+  }
+  
+  /* Active link style */
+  nav ul li a.active {
+    background-color: #004080; /* Different shade to highlight active link */
+    color: #ffffff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.5em 0;
+    }
+  }
+  

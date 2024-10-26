@@ -1,0 +1,60 @@
+/* Main container styling */
+div {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Heading style */
+  h2 {
+    color: #d9534f;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown label and select styling */
+  label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Alert message styling */
+  .alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Safe message styling */
+  div p {
+    color: #5a6268;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+  }
+  
